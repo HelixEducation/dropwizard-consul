@@ -107,9 +107,6 @@ public abstract class ConsulBundle<C extends Configuration>
         // getConsulAgentHost() and getConsulAgentPort() if Consul is not
         // listening on the default localhost:8500.
         try {
-            //final Consul consul;
-
-
             LOGGER.debug("Building Consul Client");
             Consul.Builder builder = Consul.builder()
                 .withHostAndPort(HostAndPort
